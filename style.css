@@ -1,0 +1,1017 @@
+
+
+@media (min-width: 1025px) {
+
+body {
+    margin: 0;
+    padding: 0;
+    filter: saturate(130%); /* saturacao da pagina */
+    box-sizing: border-box; /* define a caixa de modelagem para incluir borda e preenchimento no tamanho total */
+}
+
+
+/* Barra de navegação */
+#nav {
+    position: sticky; /* fixar a barra de navegacao*/
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100px; 
+    display: flex; 
+    align-items: center; /* alinha os itens verticalmente */
+    justify-content: space-between; /* itens igualmente separados */
+    background-color: #422b21; 
+    z-index: 1000; /* ficar sobre tudo */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.navLogo {
+    flex: 0 1 auto; 
+}
+
+.navLogo img {
+    width: 30%; 
+    flex: 0 1 auto; 
+    margin-left: 5%; 
+    transition: transform 0.3s ease; 
+}
+
+.navLogo img:hover
+{
+    transform: scale(1.05);
+}
+
+.navMenu {
+    display: flex; 
+    position: absolute; /* posicao absoluta */
+    left: 50%; /* alinha à esquerda */
+    transform: translateX(-50%); /* move 50% para a esquerda */
+    flex: 1; 
+    text-align: center; /* alinhamento do texto */
+    white-space: nowrap; /* nao quebrar o texto */
+}
+
+.navMenu ul {
+    display: flex; 
+    gap: 40px; /* espaço entre os itens */
+}
+
+.navMenu ul a {
+    text-decoration: none; /* sem sublinhado do link */
+    margin: 0px 20px; 
+    font-weight: 600; /* peso da fonte */
+    font-size: 20px; 
+}
+
+.nav1:hover {
+    text-decoration: underline #E1D3CC;
+
+}
+
+.nav1 {
+    padding: 11px; 
+    color: #E1D3CC;
+}
+
+.buttom1 {
+
+    background-color: #E1D3CC; 
+    padding: 11px; 
+    border-radius: 9px; /* borda arredondada */
+    color: #422B21; 
+    transition: transform 0.3s ease; 
+}
+
+.buttom1:hover {
+    color: #FB4A59; 
+    transform: scale(1.05); 
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%; 
+}
+
+#home {
+    width: 100%; 
+}
+
+#home img {
+    width: 100%; 
+    height: auto; 
+    border-top: 3px solid #FB4A59;
+    border-bottom: 3px solid #FB4A59;
+}
+
+.hometablet
+{
+    display: none;
+}
+
+.homemobile {
+    display: none;
+}
+
+/* Promocao */
+#offers {
+    margin-top: -20px; 
+}
+
+.container {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+    grid-template-rows: 1fr 1fr; /* duas linhas iguais */
+    height: 60vh; /* altura da grade */
+    background-color: #422B21; 
+    overflow: hidden; /* adiciona overflow hidden para evitar alterações de tamanho */
+}
+
+.offersdaytablet
+{
+    display: none;
+}
+
+
+.offersday {
+    grid-column: 1 / 2; /* Colunas */
+    grid-row: 1 / 3; /* Linhas */
+    background-size: cover; /* tamanho da imagem de fundo */
+    display: flex; 
+    align-items: center; /* alinha os itens verticalmente */
+    justify-content: center; /* justifica o conteúdo */
+    margin-right: 70%; 
+    
+}
+
+.offersday img {
+    width: 90%; 
+    height: auto; 
+    border-radius: 10px; /* borda arredondada */
+    object-fit: cover; /* ajusta o tamanho e o recorte da imagem */
+}
+
+.offerscake {
+    grid-column: 2 / 3; /* Colunas */
+    grid-row: 1 / 2; /* Linhas */
+    display: flex; 
+    align-items: center; /* alinha os itens verticalmente */
+    margin-left: -70%; 
+    margin-bottom: 200px; 
+    align-items: center; /* alinha os itens verticalmente */
+    justify-content: center; /* justifica o conteúdo */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FB4A59; 
+    font-size: 40px; 
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-weight: 600;
+    
+}
+
+.giftcakes {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    display: flex; 
+    margin-left: -55%; 
+    margin-top: -200px; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas iguais */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Justifica o conteúdo */
+}
+
+.giftcakes img {
+    width: 60%; 
+}
+
+.box1 {
+    display: flex; /* Display flexível para layout */
+    justify-content: center; /* Justifica o conteúdo */
+}
+
+.box2 {
+    display: flex; 
+    justify-content: center; 
+    margin-top: -130px; 
+    transition: transform 0.3s ease; 
+    position: relative;
+    overflow: hidden; /* esconder barra de rolagem */
+}
+
+.box2 img:hover {
+    transform: scale(1.04); 
+}
+
+
+.arrow {
+    display: none;
+}
+
+/* Cardapio de Bolos*/
+
+#menucake {
+    margin-top: -27px; 
+    padding: 0 150px; 
+    text-align: center; /* Alinhamento do texto */
+    background-image: url(img/Cardapiofundo.svg); /* Imagem de fundo */
+    background-size: cover; /* Tamanho da imagem de fundo */
+    padding-top: 50px; 
+    padding-bottom: 110px;
+    font-weight: 600;
+}
+
+#menucake h1 {
+    font-size: 2em; 
+    color: #333; /* Cor do texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid; /* Display em grade */
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas iguais */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.bolo {
+    background-color: #E1D3CC; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Raio da borda arredondada */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+    min-height: 350px; /* Altura mínima */
+    align-items: center; /* Alinha os itens verticalmente */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.bolo:hover {
+    transform: scale(1.02); /* Efeito de escala ao passar o mouse */
+}
+
+.bolo img {
+    width: 100%; /* Largura total */
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+    border-radius: 8px; /* Raio da borda arredondada */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.bolo img:active {
+    transform: scale(1.12);
+}
+
+
+.bolo p {
+    margin-top: 10px; /* Margem superior */
+    font-size: 1em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+}
+
+.bolo .nome
+{
+    font-family: cursive;
+}
+
+.bolo .preco {
+    margin-top: 10px; /* Margem superior */
+    font-size: 1em; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.bolo .descricao {
+    margin-top: 10px; /* Margem superior */
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #999; /* Cor do texto */
+}
+
+.buttom2 {
+    text-decoration: none; /* Sem decoração de link */
+    background-color: #422B21; /* Cor de fundo */
+    padding: 11px; /* Espaçamento interno */
+    border-radius: 9px; /* Raio da borda arredondada */
+    color: #E1D3CC; /* Cor do texto */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.buttom2:hover {
+    color: #FB4A59; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Aumenta em 5% ao passar o mouse */
+}
+
+/* Rodapé */
+#contatos {
+    background-color: #422B21; /* Cor de fundo */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.iconsfinal {
+    margin-top: 10px; /* Margem superior */
+    width: 35px; /* Largura */
+    margin-right: 5px; /* Margem à direita */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconsfinal:hover
+{
+    transform: scale(1.1);
+}
+
+.iconefinal
+{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconefinal img {
+    width: 250px; /* Largura da imagem */
+    margin-bottom: -60px;
+    margin-top: -10px;
+}
+
+.iconefinal:hover
+{
+    transform: scale(1.1);
+}
+
+#contatos h5 {
+    margin-bottom: 10px; /* Margem inferior */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #E1D3CC; /* Cor do texto */
+}
+
+.ender {
+    margin: -6px; /* Margem negativa */
+    text-align: center; /* Alinhamento do texto */
+    color: #E1D3CC; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Versao celular */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0; /* Define a margem do corpo como zero */
+        padding: 0; /* Define o preenchimento do corpo como zero */
+        filter: saturate(100%);
+        box-sizing: border-box; /* Define a caixa de modelagem para incluir borda e preenchimento no tamanho total */
+        filter: saturate(140%); /* saturacao da pagina */
+    }
+
+
+    /* Barra de navegação */
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #422B21; /* Cor de fundo da barra de navegação */
+    position: sticky; /* Fixa a barra de navegação na parte superior da tela */
+    gap: 10px;
+    top: 0; /* Distância do topo */
+    left: 0; /* Distância da esquerda */
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura */
+    z-index: 1000; /* Camada de sobreposição */
+    white-space: nowrap; /* Não quebrar o texto */
+    height: 10vh; /* Altura da grade */
+  }
+  
+  .navLogo {
+    order: 1; /* Define a ordem do item (logo) na flex container */
+    margin: 0;
+    align-items: center;
+  }
+  
+  .navLogo img {
+    width: 120px; /* Largura máxima para o logotipo */
+    height: auto; /* Altura automática */
+    display: flex;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.navLogo img:active 
+{
+    transform: scale(1.1);
+}
+  
+.buttom1 {
+
+    display: none;
+
+}
+  .navMenu {
+    order: 2; /* Define a ordem do item (menu) na flex container */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    justify-items: center;
+  }
+  
+  .navMenu ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display flexível para layout */
+    gap: 20px; /* Espaço entre os itens */
+  }
+
+  .nav1
+  {
+    text-decoration: none; /* Sem decoração de link */
+    color: #E1D3CC; /* Cor do texto */
+  }
+
+
+  .nav1:active {
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+
+
+
+/* Cabeçalho */
+header {
+    width: 100%; /* Largura total */
+    background-color: #422B21;
+}
+
+#home {
+    width: 100%; /* Largura total */
+}
+
+
+#home img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+}
+
+.homedesktop
+{
+    display: none;
+}
+
+.hometablet
+{
+    display: none;
+}
+
+/* Promoção */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #422b21;
+    position: relative; /* Para permitir posicionamento absoluto das setas */
+}
+
+.offersdaytablet {
+    display: none;
+}
+
+.offersday img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 9px;
+}
+
+.offerscake {
+    text-align: center;
+    font-family: "Playwrite IS", cursive; /* Fonte */
+    color: #fb4a59;
+}
+
+.box1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.giftcakes {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 70%; /* Ajuste conforme necessário */
+    scrollbar-width: none; /* Para esconder a barra de rolagem no Firefox */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+    margin-bottom: 20px; /* Espaço abaixo do giftcakes */
+}
+
+.box2 {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+    margin-top: -20px;
+}
+
+.box2 img {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    background-color: #fb4a59;
+    color: #E1D3CC;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.left-arrow {
+    left: 10px;
+    top: 80%
+}
+
+.right-arrow {
+    right: 10px;
+    top: 80%
+}
+
+/* Cardapio de bolos */
+
+#menucake {
+    padding: 20px;
+    background-image: url(img/Cardapiofundomobile.svg); /* Cor de fundo */
+    margin-top: -27px; /* Margem superior negativa */
+    text-align: center; /* Alinhamento do texto */
+    background-size: cover; /* Tamanho da imagem de fundo */
+    padding-top: 25px; /* Preenchimento superior */
+    padding-bottom: 20px; /* Preenchimento inferior */
+  }
+  
+  #menucake h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-family: "Playwrite IS", cursive;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .grid {
+    display: flex; /* Display flexível para layout horizontal */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+    overflow-y: hidden;
+    margin-top: 20px; /* Margem superior */
+    scroll-behavior: smooth; /* Comportamento suave de rolagem */
+    margin-bottom: 20px;
+  }
+  
+  .bolo {
+    flex: 0 0 auto; /* Permite que cada div bolo tenha tamanho automático */
+    background-color: #E1D3CC; /* Cor de fundo das divs bolo */
+    padding: 10px; /* Espaçamento interno */
+    width: 270px; /* Largura fixa de cada bolo */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #E1D3CC; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+    min-height: 350px; /* Altura mínima */
+    align-items: center; /* Alinha os itens verticalmente */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+  }
+  
+  .bolo img {
+    width: 100%; /* Imagem do bolo ocupa toda a largura da div */
+    border-radius: 5px; /* Borda arredondada para a imagem */
+    margin-top: -15px;
+  }
+  
+
+  
+  .nome {
+    margin-top: 0; /* Margem superior para o nome do bolo */
+    font-size: 18px; /* Tamanho da fonte do nome do bolo */
+    color: #333; /* Cor do texto */
+    font-family: cursive;
+  }
+  
+  .preco {
+    font-style: italic; /* Estilo de fonte itálico para o preço */
+    margin-top: 0; /* Margem superior para o preço */
+    color: #666; /* Cor do texto do preço */
+  }
+  
+  .descricao {
+    margin-top: 0; /* Margem superior para a descrição do bolo */
+    font-size: 14px; /* Tamanho da fonte da descrição */
+    color: #555; /* Cor do texto da descrição */
+  }
+  
+  .buttom2 {
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: bold; /* Peso da fonte em negrito */
+    text-decoration: none; /* Sem decoração de link */
+    background-color: #422B21; /* Cor de fundo */
+    padding: 11px; /* Espaçamento interno */
+    border-radius: 9px; /* Raio da borda arredondada */
+    color: #E1D3CC; /* Cor do texto */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+  }
+  .buttom2:active
+  {
+    color: #FB4A59;
+    transform: scale(1.05);
+  }
+
+  
+  /* Rodapé */
+#contatos {
+    background-color: #422B21; /* Cor de fundo */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.iconsfinal {
+    margin-top: 5px; /* Margem superior */
+    width: 30px; /* Largura */
+    margin-right: 5px; /* Margem à direita */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconsfinal:active
+{
+    transform: scale(1.1);
+}
+
+.iconefinal
+{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconefinal img {
+    width: 170px; /* Largura da imagem */
+    margin-bottom: -65px;
+    margin-top: -20px;
+}
+
+.iconefinal:active
+{
+    transform: scale(1.1);
+}
+
+#contatos h5 {
+    margin-bottom: 0; /* Margem inferior */
+    font-size: 11px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #E1D3CC; /* Cor do texto */
+}
+
+.ender {
+    margin: -6px; /* Margem negativa */
+    text-align: center; /* Alinhamento do texto */
+    color: #E1D3CC; /* Cor do texto */
+    font-size: 13px; /* Tamanho da fonte */
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* Versao tablet */
+@media (min-width: 601px) and (max-width: 1024px) 
+{
+
+    body {
+        margin: 0; /* Define a margem do corpo como zero */
+        padding: 0; /* Define o preenchimento do corpo como zero */
+        filter: saturate(100%);
+        box-sizing: border-box; /* Define a caixa de modelagem para incluir borda e preenchimento no tamanho total */
+        filter: saturate(140%); /* saturacao da pagina */
+    }
+
+#nav {
+    position: sticky; /* Fixa a barra de navegação na parte superior da tela */
+    top: 0; /* Distância do topo */
+    left: 0; /* Distância da esquerda */
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura */
+    display: flex; /* Display flexível para layout */
+    align-items: center; /* Alinha os itens verticalmente */
+    filter: saturate(130%); /* saturacao da pagina */
+    background-color: #422B21; /* Cor de fundo */
+    gap: 20px; /* Espaço entre os itens */
+    z-index: 1000; /* Camada de sobreposição */
+}
+
+.navLogo {
+    flex: 0 1 auto;
+}
+
+.navLogo img {
+    width: 20%; /* Largura da imagem do logo */
+    flex: 0 1 auto; /* Flex-grow, flex-shrink, flex-basis */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.navLogo img:active 
+{
+    transform: scale(1.1);
+}
+
+.navMenu {
+    display: flex; /* Display flexível para layout */
+    position: absolute; /* Posição absoluta */
+    left: 58%; /* Alinha à esquerda 50% */
+    transform: translateX(-50%); /* Move 50% para a esquerda */
+    flex: 1; /* Flex-grow */
+    text-align: center; /* Alinhamento do texto */
+    white-space: nowrap; /* Não quebrar o texto */
+}
+
+.navMenu ul {
+    display: flex; /* Display flexível para layout */
+    gap: 10px; /* Espaço entre os itens */
+}
+
+.navMenu ul a {
+    text-decoration: none; /* Sem decoração de link */
+    margin: 0px 20px; /* Margens horizontal */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 17px; /* Tamanho da fonte */
+}
+
+.nav1:active {
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+.nav1 {
+    padding: 11px; /* Espaçamento interno */
+    color: #E1D3CC; /* Cor do texto */
+}
+
+.nav1.active
+{
+    color: #000;
+}
+
+.buttom1 {
+
+    background-color: #E1D3CC; /* Cor de fundo */
+    padding: 11px; /* Espaçamento interno */
+    border-radius: 9px; /* Raio da borda arredondada */
+    color: #422B21; /* Cor do texto */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.buttom1:active {
+    color: #FB4A59; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+
+    
+/* Cabeçalho */
+
+
+header {
+    width: 100%; /* Largura total */
+}
+
+#home {
+    width: 100%; /* Largura total */
+}
+
+#home img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    border-top: 3px solid #FB4A59;
+    border-bottom: 3px solid #FB4A59;
+}
+
+.homedesktop
+{
+    display: none;
+}
+
+.homemobile
+{
+    display: none;
+}
+
+/* Promocao */
+.container {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #422B21;
+}
+
+.offersday
+
+{
+    display: none;
+}
+
+.offersdaytablet img {
+
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 9px;
+}
+
+.offerscake {
+    text-align: center;
+    font-family: "Playwrite IS", cursive; 
+    color: #FB4A59;
+}
+
+.box1
+{
+    font-size: 50px;
+}
+
+.giftcakes 
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 img 
+{
+    width: 100%;
+}
+
+.box2 
+{
+    width: 100%;
+}
+
+
+.box2 img:active{
+    transform: scale(1.05); 
+}
+
+.box2:active{
+    transform: scale(1.01); 
+}
+
+.arrow {
+    display: none;
+}
+
+
+/* Cardapio de bolos*/
+
+#menucake {
+    margin-top: -27px; /* Margem superior negativa */
+    padding: 0 150px; /* Preenchimento */
+    text-align: center; /* Alinhamento do texto */
+    background-image: url(img/Cardapiofundotablet.svg); /* Imagem de fundo */
+    background-size: cover; /* Tamanho da imagem de fundo */
+    padding-top: 50px; /* Preenchimento superior */
+    padding-bottom: 110px; /* Preenchimento inferior */
+}
+
+#menucake h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-family: "Playwrite IS", cursive;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid; /* Display em grade */
+    grid-template-columns: repeat(2, 1fr); /* Quatro colunas iguais */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.bolo {
+    background-color: #E1D3CC; 
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Raio da borda arredondada */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.bolo img {
+    width: 100%; /* Largura total */
+}
+
+.bolo p {
+    margin-top: 10px; /* Margem superior */
+    font-size: 1em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+}
+
+.bolo .nome
+{
+    font-family: cursive;
+}
+
+.bolo .preco {
+    margin-top: 10px; 
+    font-size: 1em; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.bolo .descricao {
+    margin-top: 10px; /* Margem superior */
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #999; /* Cor do texto */
+}
+
+.buttom2 {
+    text-decoration: none; /* Sem decoração de link */
+    background-color: #422B21; /* Cor de fundo */
+    padding: 11px; /* Espaçamento interno */
+    border-radius: 9px; /* Raio da borda arredondada */
+    color: #E1D3CC; /* Cor do texto */
+}
+
+.buttom2:active {
+    color: #FB4A59; /* Cor do texto ao passar o mouse */
+}
+
+/* Rodapé */
+#contatos {
+    background-color: #422B21; /* Cor de fundo */
+    display: flex; /* Display flexível para layout */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.iconsfinal {
+    margin-top: 10px; /* Margem superior */
+    width: 45px; /* Largura */
+    margin-right: 5px; /* Margem à direita */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconsfinal:active
+{
+    transform: scale(1.1);
+}
+
+.iconefinal
+{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.iconefinal img {
+    width: 180px; /* Largura da imagem */
+    margin-bottom: -45px; /* Margem inferior negativa */
+}
+
+.iconefinal:active
+{
+    transform: scale(1.1);
+}
+
+#contatos h5 {
+    margin-bottom: 10px; /* Margem inferior */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #E1D3CC; /* Cor do texto */
+}
+
+.ender {
+    margin: -6px; 
+    text-align: center; /* Alinhamento do texto */
+    color: #E1D3CC; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+}
+}
